@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/73ff7aaf76.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./assets/style/home.css">
+    <link rel="stylesheet" href="./assets/style/quizzes.css">
     <link rel="shortcut icon" type="image/png" href="./assets/img/logo.png"/>
     <title>Flashcard</title>
 </head>
@@ -61,12 +62,43 @@
             <input type="text" name="" class="inputSearch" placeholder="Search memory card">
         </div>
         <div class="createMore">
-            <i class="fa-regular fa-square-plus" id="moreIcon"></i>
-            
+            <img src="./assets/img/quizzes.png" alt="" width="35px">
         </div>
         <div>
             <i class="fa-solid fa-bell" id="bellNotify"></i>
         </div>
     </nav>
+    <section>
+        <div class="banner"></div>
+    </section>
+    <div class="btnLinks"><a href="" class="btnLink">Let's do Quizzes</a></div>
+    <div class="contentOut">
+        <div class="quiz-container" id="quiz">
+            <div class="quiz-header">
+                <h2 id="question">Question</h2>
+                <ul>
+                    <li>
+                        <input type="radio" name="answer" id="a" class="answer">
+                        <label for="a" id="a_text">answer</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="answer" id="b" class="answer">
+                        <label for="b" id="b_text">answer</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="answer" id="c" class="answer">
+                        <label for="c" id="c_text">answer</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="answer" id="d" class="answer">
+                        <label for="d" id="d_text">answer</label>
+                    </li>
+                </ul>
+            </div>
+            <button id="submit">Submit</button>
+        </div>
+    </div>
+    
 </body>
+<script src="./js/quizzes.js"></script>
 </html>
