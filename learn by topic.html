@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/73ff7aaf76.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./assets/style/home.css">
+    <link rel="stylesheet" href="./assets/style/learn by topic.css">
+    <link rel="shortcut icon" type="image/png" href="./assets/img/logo.png"/>
+    <link rel="import" href="./home.html">
+    <title>Learn by topic</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="./assets/img/logo.png" alt="" class="logoImg">
+        </div>
+        <div class="home">
+            <a href="./home.html">Home</a>
+        </div>
+        <div class="topic">
+            <button class="dropBtn">Topic
+                <i class="fa-solid fa-caret-down" id="dropdownIcon"></i>
+            </button>
+            <div class="dropdownContent">
+                <div class="row">
+                    <div id="learnTopic" class="column">
+                        <h3>Daily life</h3>
+                        <li><a href="">Family</a></li>
+                        <li><a href="">Food</a></li>
+                        <li><a href="">Drink</a></li>
+                        <li><a href="">Thing</a></li>
+                        <li><a href="">Others</a></li>
+                    </div>
+                    <div id="practice" class="column">
+                        <h3>Practice</h3>
+                        <li><a href="./Practice.html">N1</a></li>
+                        <li><a href="">N2</a></li>
+                        <li><a href="">N3</a></li>
+                        <li><a href="">N4</a></li>
+                        <li><a href="">N5</a></li>
+                    </div>
+                    <div id="learnVocab" class="column">
+                        <h3>Vocab</h3>
+                        <li><a href="">N1</a></li>
+                        <li><a href="">N2</a></li>
+                        <li><a href="">N3</a></li>
+                        <li><a href="">N4</a></li>
+                        <li><a href="">N5</a></li>
+                    </div>
+                    <div id="JLPT" class="column">
+                        <h3>JLPT</h3>
+                        <li><a href="">N1</a></li>
+                        <li><a href="">N2</a></li>
+                        <li><a href="">N3</a></li>
+                        <li><a href="">N4</a></li>
+                        <li><a href="">N5</a></li>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="searchBar">
+            <input type="text" name="" class="inputSearch" placeholder="Search memory card">
+        </div>
+        <div class="createMore">
+            <i class="fa-regular fa-square-plus" id="moreIcon"></i>
+        </div>
+        <div>
+            <i class="fa-solid fa-bell" id="bellNotify"></i>
+        </div>
+    </nav>
+    <aside>
+        <div class="tab">
+            <button class="tablinks" onclick="openTopic(event,'food')" id="defaultOpen" >家族
+                <i class="fa-solid fa-people-roof" id="icon"></i>
+            </button>
+            <button class="tablinks" onclick="openTopic(event,'food')">日本料理
+                <i class="fa-solid fa-bowl-food" id="icon"></i>
+            </button>
+            <button class="tablinks" onclick="openTopic(event,'food')">飲み物
+                <i class="fa-solid fa-mug-saucer" id="icon"></i>
+            </button>
+            <button class="tablinks" onclick="openTopic(event,'food')">物
+                <i class="fa-solid fa-laptop" id="icon"></i>
+            </button>
+            <button class="tablinks">学校
+                <i class="fa-solid fa-school" id="icon"></i>
+            </button>
+            <button class="tablinks">音楽
+                <i class="fa-solid fa-music" id="icon"></i>
+            </button>
+            <button class="tablinks">Body
+                <i class="fa-solid fa-child" id="icon"></i>
+            </button>
+            <button class="tablinks">服
+                <i class="fa-solid fa-shirt" id="icon"></i>
+            </button>
+            <button class="tablinks">家
+                <i class="fa-solid fa-house" id="icon"></i>
+            </button>
+            <button class="tablinks">天気
+                <i class="fa-solid fa-cloud" id="icon"></i>
+            </button>
+            <button class="tablinks">果物
+                <i class="fa-brands fa-apple" id="icon"></i>
+            </button>
+        </div>
+        
+        <div id="food" class="tabcontent">
+            <div class="flash">
+                <img src="./assets/img/flashcard.png" alt="" class="flashcard">
+                <p class="flashTitle">Flash card</p>
+            </div>
+            <div class="flipCards">
+                <div class="flipCard">
+                    <div class="flipCardInner">
+                        <div class="flipCardFront">
+                            <p>おにぎり</p>
+                        </div>
+                        <div class="flipCardBack">
+                            <img src="./assets/img/vc1.png" alt="">
+                            <p>おにぎり</p>
+                            <p>Cơm nắm</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flipCard">
+                    <div class="flipCardInner">
+                        <div class="flipCardFront">
+                            <p>おにぎり</p>
+                        </div>
+                        <div class="flipCardBack">
+                            <img src="./assets/img/vc1.png" alt="">
+                            <p>おにぎり</p>
+                            <p>Cơm nắm</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flipCard">
+                    <div class="flipCardInner">
+                        <div class="flipCardFront">
+                            <p>おにぎり</p>
+                        </div>
+                        <div class="flipCardBack">
+                            <img src="./assets/img/vc1.png" alt="">
+                            <p>おにぎり</p>
+                            <p>Cơm nắm</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flipCard">
+                    <div class="flipCardInner">
+                        <div class="flipCardFront">
+                            <p>おにぎり</p>
+                        </div>
+                        <div class="flipCardBack">
+                            <img src="./assets/img/vc1.png" alt="">
+                            <p>おにぎり</p>
+                            <p>Cơm nắm</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flipCard">
+                    <div class="flipCardInner">
+                        <div class="flipCardFront">
+                            <p>おにぎり</p>
+                        </div>
+                        <div class="flipCardBack">
+                            <img src="./assets/img/vc1.png" alt="">
+                            <p>おにぎり</p>
+                            <p>Cơm nắm</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flipCard">
+                    <div class="flipCardInner">
+                        <div class="flipCardFront">
+                            <p>おにぎり</p>
+                        </div>
+                        <div class="flipCardBack">
+                            <img src="./assets/img/vc1.png" alt="">
+                            <p>おにぎり</p>
+                            <p>Com nắm</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flipCard">
+                    <div class="flipCardInner">
+                        <div class="flipCardFront">
+                            <p>おにぎり</p>
+                        </div>
+                        <div class="flipCardBack">
+                            <img src="./assets/img/vc1.png" alt="">
+                            <p>おにぎり</p>
+                            <p>Cơm nắm</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flipCard">
+                    <div class="flipCardInner">
+                        <div class="flipCardFront">
+                            <p>おにぎり</p>
+                        </div>
+                        <div class="flipCardBack">
+                            <img src="./assets/img/vc1.png" alt="">
+                            <p>おにぎり</p>
+                            <p>Cơm nắm</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="./assets/img/home1.png" alt="" width="60px" class="bookImg">
+            <p class="title">Từ vựng khác</p>
+            <div class="all">
+                <div class="rice">
+                    <h2>Các món cơm</h2>
+                    <div class="all-group">
+                        <div class="group">
+                            <div id="tune" class="left">鉄火丼 - てっかどん</div>
+                            <div id="addTune" class="add">Com cá ngừ sốt mè</div>
+                        </div>
+                        <div class="group">
+                            <div id="beef" class="left">牛丼 - ぎゅうどん</div>
+                            <div id="addBeef" class="add">Com thịt bò</div>
+                        </div>
+                        <div class="group">
+                            <div id="pork" class="left">豚丼 - ぶたどん</div>
+                            <div id="addPork" class="add">Com thịt heo</div>
+                        </div>
+                        <div class="group">
+                            <div id="tea" class="left">親子丼 - おやこどん</div>
+                            <div id="addTea" class="add">Com bố mẹ và con</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="all-group">
+                    <h2>Các loại mì</h2>
+                    <div class="group">
+                        <div id="udon" class="left">うどん </div>
+                        <div id="addUdon" class="add">Mì Udon</div>
+                    </div>
+                    <div class="group">
+                        <div id="soba" class="left">そば</div>
+                        <div id="addSoba" class="add">Mì Soba</div>
+                    </div>
+                    <div class="group">
+                        <div id="ramen" class="left">ラーメン</div>
+                        <div id="addRamen" class="add">Mì Ramen</div>
+                    </div>
+                    <div class="group">
+                        <div id="hiya" class="left">ひやむぎ</div>
+                        <div id="addHiya" class="add">Mì lạnh</div>
+                    </div>
+                </div>
+                <div class="all-group">
+                    <h2>Các món nướng</h2>
+                    <div class="group">
+                        <div id="grilledBeef" class="left">焼肉 - やきにく</div>
+                        <div id="addGrBe" class="add">Thịt bò nướng</div>
+                    </div>
+                    <div class="group">
+                        <div id="chicken" class="left">焼き鳥 - やきとり</div>
+                        <div id="addChick" class="add">Thịt gà nướng</div>
+                    </div>
+                    <div class="group">
+                        <div id="eel" class="left">うなぎ</div>
+                        <div id="addEel" class="add">Lươn nướng</div>
+                    </div>
+                    <div class="group">
+                        <div id="ginger" class="left">しょうが焼き</div>
+                        <div id="addGin" class="add">Gừng nướng</div>
+                    </div>
+                </div>
+                <div class="all-group">
+                    <h2>Các món chiên</h2>
+                    <div class="group">
+                        <div id="fried" class="left">天ぷら - てんぷら</div>
+                        <div id="addFried" class="add">Món chiên xù</div>
+                    </div>
+                    <div class="group">
+                        <div id="skewer" class="left">串揚げ - くしあげ</div>
+                        <div id="addSke" class="add">Xiên que lăng bột</div>
+                    </div>
+                    <div class="group">
+                        <div id="friShrimp" class="left">えびフライ</div>
+                        <div id="addShrimp" class="add">Tôm chiên phồng</div>
+                    </div>
+                    <div class="group">
+                        <div id="friPork" class="left">トンカツ</div>
+                        <div id="addFriPork" class="add">Thịt heo chiên xù</div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </aside>
+    <footer>
+        <div class="columnft">
+            <!-- <img src="./assets/img/logo.png" alt="" class="logoFt"> -->
+            <div class="textIcon">
+                <!-- <h3>Learn Japanese</h3> -->
+                <div class="social">
+                    <li><i class="fa-brands fa-square-facebook" ></i></li>
+                    <li><i class="fa-brands fa-square-instagram"></i></li>
+                    <li><i class="fa-brands fa-linkedin"></i></li>
+                    <li><i class="fa-solid fa-earth-oceania"></i></li>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+<script src="./js/learn by topic.js"></script>
+</html>

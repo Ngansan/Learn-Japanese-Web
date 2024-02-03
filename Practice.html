@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/73ff7aaf76.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/style/home.css">
+    <link rel="stylesheet" href="./assets/style/learn by topic.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="shortcut icon" type="image/png" href="./assets/img/logo.png"/>
+    <link rel="stylesheet" href="./assets/style/Practice.css">
+    <title>N1</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="./assets/img/logo.png" alt="" class="logoImg">
+        </div>
+        <div class="home">
+            <a href="./home.html">Home</a>
+        </div>
+        <div class="topic">
+            <button class="dropBtn">Topic
+                <i class="fa-solid fa-caret-down" id="dropdownIcon"></i>
+            </button>
+            <div class="dropdownContent">
+                <div class="row">
+                    <div id="learnTopic" class="column">
+                        <h3>Daily life</h3>
+                        <li><a href="./learn by topic.html" >Family</a></li>
+                        <li><a href="">Food</a></li>
+                        <li><a href="">Drink</a></li>
+                        <li><a href="">Thing</a></li>
+                        <li><a href="">Road</a></li>
+                    </div>
+                    <div id="practice" class="column">
+                        <h3>Practice</h3>
+                        <li><a href="">N1</a></li>
+                        <li><a href="">N2</a></li>
+                        <li><a href="">N3</a></li>
+                        <li><a href="">N4</a></li>
+                        <li><a href="">N5</a></li>
+                    </div>
+                    <div id="learnVocab" class="column">
+                        <h3>Vocab</h3>
+                        <li><a href="">N1</a></li>
+                        <li><a href="">N2</a></li>
+                        <li><a href="">N3</a></li>
+                        <li><a href="">N4</a></li>
+                        <li><a href="">N5</a></li>
+                    </div>
+                    <div id="JLPT" class="column">
+                        <h3>JLPT</h3>
+                        <li><a href="">N1</a></li>
+                        <li><a href="">N2</a></li>
+                        <li><a href="">N3</a></li>
+                        <li><a href="">N4</a></li>
+                        <li><a href="">N5</a></li>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="searchBar">
+            <input type="text" name="" class="inputSearch" placeholder="Search memory card">
+        </div>
+        <div class="createMore">
+            <i class="fa-regular fa-square-plus" id="moreIcon"></i>
+        </div>
+        <div>
+            <i class="fa-solid fa-bell" id="bellNotify"></i>
+        </div>
+    </nav>
+    <aside>
+        <div class="leftSide">
+            <button class="links" onclick="openPage(event, 'grammar')" id="defaultOpen"> Grammar
+                <i class="fa-solid fa-spell-check" id="iconMenu"></i>
+            </button>
+            <button class="links" onclick="openPage(event, 'reading')"> Reading
+                <i class="fa-solid fa-book-open" id="iconMenu"></i>
+            </button>
+            <button class="links" onclick="openPage(event, 'listening')"> Listening
+                <i class="fa-solid fa-ear-listen" id="iconMenu"></i>
+            </button>
+            <button class="links" onclick="openPage(event, 'kanji')"> Kanji
+                <i class="fa-solid fa-flag" id="iconMenu"></i>
+            </button>
+        </div>
+        <div id="grammar" class="content">
+            <div class="mid">
+                <h1>Tổng hợp Ngữ pháp N1</h1>
+                <iframe width="560" height="315" 
+                src="https://www.youtube.com/embed/kAUY55QLs4U?si=XDXUo8voaxaeBKvJ" 
+                title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen></iframe>
+                <div class="document">
+                    <h1>Tổng hợp tài liệu</h1>
+                    <!-- <button class="getDoc">Lấy tài liệu tại đây</button> -->
+                    <i class="fa-solid fa-hand-point-down" id="hand"></i>
+                    <div class="allDoc">
+                        <p><b>Ngữ pháp N1:</b> <a href="">https://mazii.net/vi-VN/blog/350-ngu-phap-jlpt-n1-ban-can-biet-cach-su-dung-va-vi-du/</a></p>
+                        <p><b>Test N1:</b> <a href="">https://www.vnjpclub.com/luyen-thi-jlpt-n1/</a></p> 
+                        <p><b>Các câu hỏi N1:</b> <a href="">https://www.vnjpclub.com/500-cau-hoi-n1/</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="grammarLeft">
+                <h1>Tổng hợp một số trang web giúp học tiếng Nhật</h1>
+                <div class="items">
+                    <div class="item">
+                        <img src="./assets/img/img1.png" alt="" width="120px" class="imgItem">
+                        <div class="introduce">
+                            <h2><a href="">Dekiru</a></h2>
+                            <p>Với danh sách các bài học phong phú, Dekiru cung cấp cho bạn một hệ thống kiến thức tiếng Nhật đầy đủ 
+                                và toàn diện nhất: từ vựng, nghe hiểu, kanji hay các bài kiểm tra tiếng Nhật.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="./assets/img/img2.png" alt="" width="120px" height="100px" class="imgItem">
+                        <div class="introduce">
+                            <h2><a href="">Riki</a></h2>
+                            <p>Với danh sách các bài học phong phú, Dekiru cung cấp cho bạn một hệ thống kiến thức tiếng Nhật đầy đủ 
+                                và toàn diện nhất: từ vựng, nghe hiểu, kanji hay các bài kiểm tra tiếng Nhật.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="./assets/img/img3.jpg" alt="" width="120px" class="imgItem">
+                        <div class="introduce">
+                            <h2><a href="">NHK</a></h2>
+                            <p>Với danh sách các bài học phong phú, Dekiru cung cấp cho bạn một hệ thống kiến thức tiếng Nhật đầy đủ 
+                                và toàn diện nhất: từ vựng, nghe hiểu, kanji hay các bài kiểm tra tiếng Nhật.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="./assets/img/img4.jpg" alt="" width="120px" class="imgItem">
+                        <div class="introduce">
+                            <h2><a href="">Nihongo</a></h2>
+                            <p>Với danh sách các bài học phong phú, Dekiru cung cấp cho bạn một hệ thống kiến thức tiếng Nhật đầy đủ 
+                                và toàn diện nhất: từ vựng, nghe hiểu, kanji hay các bài kiểm tra tiếng Nhật.</p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="reading" class="content">
+            bchbhwbech
+        </div>
+        <div id="listening" class="content">
+            bhchchc
+        </div>
+        <div id="kanji" class="content">
+            iuwvbwiv
+        </div>
+    </aside>
+    <footer>
+        <div class="columnft">
+            <!-- <img src="./assets/img/logo.png" alt="" class="logoFt"> -->
+            <div class="textIcon">
+                <!-- <h3>Learn Japanese</h3> -->
+                <div class="social">
+                    <li><i class="fa-brands fa-square-facebook" ></i></li>
+                    <li><i class="fa-brands fa-square-instagram"></i></li>
+                    <li><i class="fa-brands fa-linkedin"></i></li>
+                    <li><i class="fa-solid fa-earth-oceania"></i></li>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="./js/Practice.js"></script>
+</html>
