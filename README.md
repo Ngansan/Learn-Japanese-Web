@@ -1,4 +1,4 @@
-<h1>Link to Website: https://ngansan.github.io/Learn-Japanese-Web/</h1>
+<h2>Link to Website: https://ngansan.github.io/Learn-Japanese-Web/</h2>
 <h1>Introduction</h1>
 <p>I created this website to help me and others people who have difficulty in learning Japanese problem. My website has function such as: </p>
 <ul>
