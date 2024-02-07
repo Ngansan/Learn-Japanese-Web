@@ -14,4 +14,4 @@ I used HTML, CSS, Javascript, JQuery Library in my project
 My project is not still completly, but in my future I will try my best to have the best product
 
 ### video Demo
-@import "./video demo.mp4"
+https://github.com/Ngansan/Learn-Japanese-Web/assets/126219192/4253a4e2-865a-4d80-88bb-6b375ad8c1fc
